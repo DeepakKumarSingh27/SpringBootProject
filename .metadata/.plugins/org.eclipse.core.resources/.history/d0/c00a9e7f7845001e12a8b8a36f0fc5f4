@@ -1,0 +1,7 @@
+package com.springboot.entity;
+
+public class Order {
+ private int oId;
+ private Date oDate;
+ 
+}

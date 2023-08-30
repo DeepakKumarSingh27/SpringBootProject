@@ -1,0 +1,30 @@
+package com.springboot.entity;
+
+import java.util.Date;
+
+public class Order {
+	private int oId;
+	private Date oDate;
+
+	public int getoId() {
+		return oId;
+	}
+
+	public void setoId(int oId) {
+		this.oId = oId;
+	}
+
+	public Date getoDate() {
+		return oDate;
+	}
+
+	public void setoDate(Date oDate) {
+		this.oDate = oDate;
+	}
+
+	@Override
+	public String toString() {
+		return "Order [oId=" + oId + ", oDate=" + oDate + "]";
+	}
+
+}

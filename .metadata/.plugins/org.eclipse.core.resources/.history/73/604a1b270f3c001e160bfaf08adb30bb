@@ -1,0 +1,23 @@
+package com.jsp.studentmanagementsystem.exception;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+import com.jsp.studentmanagementsystem.util.ErrorStructure;
+
+
+@RestControllerAdvice
+public class ApplicationExceptionHandler {
+	@ExceptionHandler
+ public ResponseEntity<String> studentNotFoundById(StudentNotFounByIdException ex) {
+		ErrorStructure structure = new ErrorStructure();
+		structure.setStatue(HttpStatus.NOT_FOUND.value());
+		structure.getMessage(ex.getMessage());
+		
+		return new ResponseEntity<String>(ex.getMessage(),HttpStatus.NOT_FOUND);
+	}
+	
+	
+ }

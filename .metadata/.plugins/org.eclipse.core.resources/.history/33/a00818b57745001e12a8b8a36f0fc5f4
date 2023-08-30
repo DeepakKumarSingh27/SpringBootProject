@@ -1,0 +1,14 @@
+package com.springboot.entity;
+
+public class Card {
+	private int cardId;
+
+	public int getCardId() {
+		return cardId;
+	}
+
+	public void setCardId(int cardId) {
+		this.cardId = cardId;
+	}
+
+}

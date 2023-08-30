@@ -1,0 +1,23 @@
+package com.springboot.entity;
+
+import java.util.List;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
+@Entity
+public class Card {
+	@Id
+	private int cardId;
+	@ManyToMany
+	List<Product> products;
+
+	public int getCardId() {
+		return cardId;
+	}
+
+	public void setCardId(int cardId) {
+		this.cardId = cardId;
+	}
+
+}

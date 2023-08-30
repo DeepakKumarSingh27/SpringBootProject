@@ -1,0 +1,39 @@
+package com.springboot.entity;
+
+public class Product {
+	
+	private int pid;
+	private String pname;
+	private int pprice;
+    private double pro
+	public int getPid() {
+		return pid;
+	}
+
+	public void setPid(int pid) {
+		this.pid = pid;
+	}
+
+	@Override
+	public String toString() {
+		return "Product [pid=" + pid + ", pname=" + pname + ", pprice=" + pprice + ", getPid()=" + getPid()
+				+ ", getPname()=" + getPname() + ", getPprice()=" + getPprice() + "]";
+	}
+
+	public String getPname() {
+		return pname;
+	}
+
+	public void setPname(String pname) {
+		this.pname = pname;
+	}
+
+	public int getPprice() {
+		return pprice;
+	}
+
+	public void setPprice(int pprice) {
+		this.pprice = pprice;
+	}
+
+}

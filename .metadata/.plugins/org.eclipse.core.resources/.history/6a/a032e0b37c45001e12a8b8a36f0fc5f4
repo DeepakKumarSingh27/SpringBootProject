@@ -1,0 +1,36 @@
+package com.springboot.entity;
+
+import java.util.Date;
+
+import jakarta.persistence.ManyToMany;
+
+public class Order {
+	private int oId;
+	private Date oDate;
+            
+	@ManyToMany
+	Users user;
+	@ManyToMany
+	protected
+	public int getoId() {
+		return oId;
+	}
+
+	public void setoId(int oId) {
+		this.oId = oId;
+	}
+
+	public Date getoDate() {
+		return oDate;
+	}
+
+	public void setoDate(Date oDate) {
+		this.oDate = oDate;
+	}
+
+	@Override
+	public String toString() {
+		return "Order [oId=" + oId + ", oDate=" + oDate + "]";
+	}
+
+}

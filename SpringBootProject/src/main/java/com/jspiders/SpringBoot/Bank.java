@@ -1,0 +1,36 @@
+package com.jspiders.SpringBoot;
+
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
+
+
+@Controller
+public class Bank {
+	private int bankid;
+	private String bankName;
+
+	public int getBankid() {
+		return bankid;
+	}
+
+	public void setBankid(int bankid) {
+		this.bankid = bankid;
+	}
+
+	public String getBankName() {
+		return bankName;
+	}
+
+	public void setBankName(String bankName) {
+		this.bankName = bankName;
+	}
+
+//	@Override
+//	public String toString() {
+//		return "Bank [bankid=" + bankid + ", bankName=" + bankName + "]";
+//	}
+	public void checkBank() {
+		System.out.println("Bank is there!!!!");
+	}
+  
+}
